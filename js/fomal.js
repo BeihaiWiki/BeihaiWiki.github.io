@@ -3192,7 +3192,7 @@ if (localStorage.getItem("blogbg") != undefined) {
     --default-bg: url(/assets/img/bc11.webp);
     --darkmode-bg: url(/assets/img/bc21.webp);
     --mobileday-bg: url(/assets/img/bc10.webp);
-    --mobilenight-bg: url(/assets/img/bc15.webp);
+    --mobilenight-bg: url(/assets/img/bc21.webp);
   }`;
 }
 // --default -bg: url(https://tuchuang.voooe.cn/images/2024/06/28/bc15.webp);
