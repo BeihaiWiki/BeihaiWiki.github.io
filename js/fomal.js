@@ -3189,12 +3189,16 @@ if (localStorage.getItem("blogbg") != undefined) {
   setBg(localStorage.getItem("blogbg"));
 } else {
   document.getElementById("defineBg").innerText = `:root{
-    --default-bg: url(https://tuchuang.voooe.cn/images/2024/06/28/bc15.webp);
-    --darkmode-bg: url(https://tuchuang.voooe.cn/images/2024/06/28/bc21.webp);
-    --mobileday-bg: url(https://tuchuang.voooe.cn/images/2024/06/28/bc10.webp);
-    --mobilenight-bg: url(https://tuchuang.voooe.cn/images/2024/06/28/bc15.webp);
+    --default-bg: url(/assets/img/bc11.webp);
+    --darkmode-bg: url(/assets/img/bc21.webp);
+    --mobileday-bg: url(/assets/img/bc10.webp);
+    --mobilenight-bg: url(/assets/img/bc15.webp);
   }`;
 }
+// --default -bg: url(https://tuchuang.voooe.cn/images/2024/06/28/bc15.webp);
+//   --darkmode - bg: url(https://tuchuang.voooe.cn/images/2024/06/28/bc21.webp);
+//     --mobileday - bg: url(https://tuchuang.voooe.cn/images/2024/06/28/bc10.webp);
+//       --mobilenight - bg: url(https://tuchuang.voooe.cn/images/2024/06/28/bc15.webp);
 // 切换背景主函数
 function changeBg(s) {
   // 自定义颜色框
