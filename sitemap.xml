@@ -211,7 +211,7 @@
 
   <url>
     <loc>https://www.beihai.wiki/</loc>
-    <lastmod>2024-06-08</lastmod>
+    <lastmod>2024-06-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -219,21 +219,21 @@
   
   <url>
     <loc>https://www.beihai.wiki/tags/Markdown/</loc>
-    <lastmod>2024-06-08</lastmod>
+    <lastmod>2024-06-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.beihai.wiki/tags/%E5%A4%96%E6%8C%82%E6%A0%87%E7%AD%BE/</loc>
-    <lastmod>2024-06-08</lastmod>
+    <lastmod>2024-06-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.beihai.wiki/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/</loc>
-    <lastmod>2024-06-08</lastmod>
+    <lastmod>2024-06-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -241,36 +241,36 @@
 
   
   <url>
-    <loc>https://www.beihai.wiki/categories/%E5%8D%9A%E5%AE%A2%E9%AD%94%E6%94%B9%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2024-06-08</lastmod>
+    <loc>https://www.beihai.wiki/categories/%E5%AE%9E%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/</loc>
+    <lastmod>2024-06-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.beihai.wiki/categories/%E5%AE%9E%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/</loc>
-    <lastmod>2024-06-08</lastmod>
+    <loc>https://www.beihai.wiki/categories/%E5%8D%9A%E5%AE%A2%E9%AD%94%E6%94%B9%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2024-06-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.beihai.wiki/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/</loc>
-    <lastmod>2024-06-08</lastmod>
+    <lastmod>2024-06-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.beihai.wiki/categories/%E5%B7%A5%E4%BD%9C%E5%AE%A4/</loc>
-    <lastmod>2024-06-08</lastmod>
+    <lastmod>2024-06-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.beihai.wiki/categories/%E5%B7%A5%E4%BD%9C%E5%AE%A4/%E5%A4%A7%E6%95%B0%E6%8D%AE/</loc>
-    <lastmod>2024-06-08</lastmod>
+    <lastmod>2024-06-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>

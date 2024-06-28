@@ -2825,7 +2825,7 @@ function createtime() {
   var d = (now - o) / 1e3 - 86400 * i - 3600 * s - 60 * g, b = Math.round(d);
   1 == String(b).length && (b = "0" + b);
   let c = "";
-  c = s < 18 && s >= 9 ? `<img class='boardsign' src='https://img.shields.io/badge/辉仔小屋-科研摸鱼-1ade23?style=social&logo=Docker' title='什么时候能够实现财富自由呀~'><br> 本站居然运行了 ${i} 天 ${s} 小时 ${g} 分 ${b} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${t} 千米，约为 ${a} 个天文单位 🚀 <br> 再看看那个光点，它就在这里，这是家园，这是我们 —— 你所爱的每一个人，你认识的一个人，你听说过的每一个人，曾经有过的每一个人，都在它上面度过他们的一生✨ ` : `<img class='boardsign' src='https://img.shields.io/badge/F%E5%B0%8F%E5%B1%8B-%E4%B8%8B%E7%8F%AD%E4%BC%91%E6%81%AF%E5%95%A6%F0%9F%8C%99-6adea8?style=social&logo=coffeescript' title='下班了就该开开心心地玩耍~'><br> 本站居然运行了 ${i} 天 ${s} 小时 ${g} 分 ${b} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${t} 千米，约为 ${a} 个天文单位 🚀 <br> 再看看那个光点，它就在这里，这是家园，这是我们 —— 你所爱的每一个人，你认识的一个人，你听说过的每一个人，曾经有过的每一个人，都在它上面度过他们的一生✨ `, document.getElementById("workboard") && (document.getElementById("workboard").innerHTML = c)
+  c = s < 18 && s >= 9 ? `<img class='boardsign' src='https://img.shields.io/badge/辉仔小屋-科研摸鱼-1ade23?style=social&logo=Docker' title='什么时候能够实现财富自由呀~'><br> 本站居然运行了 ${i} 天 ${s} 小时 ${g} 分 ${b} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${t} 千米，约为 ${a} 个天文单位 🚀 <br> 再看看那个光点，它就在这里，这是家园，这是我们 —— 你所爱的每一个人，你认识的一个人，你听说过的每一个人，曾经有过的每一个人，都在它上面度过他们的一生✨ ` : `<img class='boardsign' src='https://img.shields.io/badge/辉仔小屋-下班休息啦🌙-6adea8?style=social&logo=coffeescript' title='下班了就该开开心心地玩耍~'><br> 本站居然运行了 ${i} 天 ${s} 小时 ${g} 分 ${b} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${t} 千米，约为 ${a} 个天文单位 🚀 <br> 再看看那个光点，它就在这里，这是家园，这是我们 —— 你所爱的每一个人，你认识的一个人，你听说过的每一个人，曾经有过的每一个人，都在它上面度过他们的一生✨ `, document.getElementById("workboard") && (document.getElementById("workboard").innerHTML = c)
 } setInterval((() => { createtime() }), 1e3);
 
 /*页脚计时器 end */
@@ -3184,15 +3184,15 @@ let btstu = "url(http://api.btstu.cn/sjbz/?lx=suiji)";
 let unsplash = "url(https://source.unsplash.com/random/1920x1080/)";
 
 
-// 更换背景(自己的代码)
+// 背景图更换背景(自己的代码)
 if (localStorage.getItem("blogbg") != undefined) {
   setBg(localStorage.getItem("blogbg"));
 } else {
   document.getElementById("defineBg").innerText = `:root{
-    --default-bg: url(/img/background.webp);
-    --darkmode-bg:url(https://tuchuang.voooe.cn/images/2024/06/08/bz-14.jpg);
-    --mobileday-bg: url(/img/background.webp);
-    --mobilenight-bg: url(https://tuchuang.voooe.cn/images/2024/06/08/bz-14.jpg);
+    --default-bg: url(/source/img/bc11.webp);
+    --darkmode-bg: url(/source/img/bc21.webp);
+    --mobileday-bg: url(/source/img/bc08.webp);
+    --mobilenight-bg: url(/source/img/bc21.webp);
   }`;
 }
 // 切换背景主函数
