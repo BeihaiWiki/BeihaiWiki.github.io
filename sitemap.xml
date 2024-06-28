@@ -119,6 +119,60 @@
   </url>
   
   <url>
+    <loc>https://www.beihai.wiki/posts/4509351.html</loc>
+    
+    <lastmod>2024-05-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.beihai.wiki/posts/5612471f.html</loc>
+    
+    <lastmod>2024-04-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.beihai.wiki/posts/a2c3ad19.html</loc>
+    
+    <lastmod>2024-04-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.beihai.wiki/posts/fed4c017.html</loc>
+    
+    <lastmod>2024-04-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.beihai.wiki/posts/7b60ccd7.html</loc>
+    
+    <lastmod>2024-04-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.beihai.wiki/posts/156ca839.html</loc>
+    
+    <lastmod>2024-04-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.beihai.wiki/posts/498ab7d9.html</loc>
     
     <lastmod>2023-08-10</lastmod>
@@ -173,7 +227,7 @@
   </url>
   
   <url>
-    <loc>https://www.beihai.wiki/life/games/index.html</loc>
+    <loc>https://www.beihai.wiki/site/census/index.html</loc>
     
     <lastmod>2023-03-22</lastmod>
     
@@ -182,7 +236,7 @@
   </url>
   
   <url>
-    <loc>https://www.beihai.wiki/site/census/index.html</loc>
+    <loc>https://www.beihai.wiki/life/games/index.html</loc>
     
     <lastmod>2023-03-22</lastmod>
     
@@ -248,6 +302,13 @@
   </url>
   
   <url>
+    <loc>https://www.beihai.wiki/categories/Java/</loc>
+    <lastmod>2024-06-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.beihai.wiki/categories/%E5%8D%9A%E5%AE%A2%E9%AD%94%E6%94%B9%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2024-06-28</lastmod>
     <changefreq>weekly</changefreq>
@@ -262,14 +323,14 @@
   </url>
   
   <url>
-    <loc>https://www.beihai.wiki/categories/%E5%B7%A5%E4%BD%9C%E5%AE%A4/</loc>
+    <loc>https://www.beihai.wiki/categories/Java/%E7%AE%97%E6%B3%95/</loc>
     <lastmod>2024-06-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.beihai.wiki/categories/%E5%B7%A5%E4%BD%9C%E5%AE%A4/%E5%A4%A7%E6%95%B0%E6%8D%AE/</loc>
+    <loc>https://www.beihai.wiki/categories/%E5%B7%A5%E4%BD%9C%E5%AE%A4/</loc>
     <lastmod>2024-06-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
