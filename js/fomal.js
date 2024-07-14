@@ -99,7 +99,7 @@ function getDistance(e1, n1, e2, n2) {
 
 function showWelcome() {
 
-  let dist = getDistance(113.34499552, 23.15537143, ipLoacation.result.location.lng, ipLoacation.result.location.lat); //这里换成自己的经纬度
+  let dist = getDistance(120.55, 31.57, ipLoacation.result.location.lng, ipLoacation.result.location.lat); //这里换成自己的经纬度
   let pos = ipLoacation.result.ad_info.nation;
   let ip;
   let posdesc;
@@ -158,7 +158,7 @@ function showWelcome() {
           posdesc = "很喜欢哈尔滨大剧院。";
           break;
         case "上海市":
-          posdesc = "众所周知，中国只有两个城市。";
+          posdesc = "这是我想去的城市，上海我还会回来的。";
           break;
         case "江苏省":
           switch (ipLoacation.result.ad_info.city) {
@@ -208,7 +208,14 @@ function showWelcome() {
           posdesc = "落霞与孤鹜齐飞，秋水共长天一色。";
           break;
         case "山东省":
-          posdesc = "遥望齐州九点烟，一泓海水杯中泻。";
+          switch (ipLoacation.result.ad_info.city) {
+            case "聊城市":
+              posdesc = "中国水城运河聊城，我的故乡。";
+              break;
+            default:
+              posdesc = "遥望齐州九点烟，一泓海水杯中泻。";
+              break;
+          }
           break;
         case "湖北省":
           posdesc = "来碗热干面！";
@@ -299,35 +306,35 @@ document.addEventListener('pjax:complete', showWelcome);
 //----------------------------------------------------------------
 
 /* 微博热搜 start */
-document.addEventListener('pjax:complete', getWeibo);
-document.addEventListener('DOMContentLoaded', getWeibo);
+// document.addEventListener('pjax:complete', getWeibo);
+// document.addEventListener('DOMContentLoaded', getWeibo);
 
-function getWeibo() {
-  fetch('').then(data => data.json()).then(data => {  // 这里要写上你的API!!!
-    let html = '<style>.weibo-new{background:#ff3852}.weibo-hot{background:#ff9406}.weibo-jyzy{background:#ffc000}.weibo-recommend{background:#00b7ee}.weibo-adrecommend{background:#febd22}.weibo-friend{background:#8fc21e}.weibo-boom{background:#bd0000}.weibo-topic{background:#ff6f49}.weibo-topic-ad{background:#4dadff}.weibo-boil{background:#f86400}#weibo-container{overflow-y:auto;-ms-overflow-style:none;scrollbar-width:none}#weibo-container::-webkit-scrollbar{display:none}.weibo-list-item{display:flex;flex-direction:row;justify-content:space-between;flex-wrap:nowrap}.weibo-title{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-right:auto}.weibo-num{float:right}.weibo-hotness{display:inline-block;padding:0 6px;transform:scale(.8) translateX(-3px);color:#fff;border-radius:8px}</style>'
-    html += '<div class="weibo-list">'
-    let hotness = {
-      '爆': 'weibo-boom',
-      '热': 'weibo-hot',
-      '沸': 'weibo-boil',
-      '新': 'weibo-new',
-      '荐': 'weibo-recommend',
-      '音': 'weibo-jyzy',
-      '影': 'weibo-jyzy',
-      '剧': 'weibo-jyzy',
-      '综': 'weibo-jyzy'
-    }
-    for (let item of data) {
-      html += '<div class="weibo-list-item"><div class="weibo-hotness ' + hotness[(item.hot || '荐')] + '">' + (item.hot || '荐') + '</div>'
-        + '<span class="weibo-title"><a title="' + item.title + '"href="' + item.url + '" target="_blank" rel="external nofollow noreferrer" style="color:#a08ed5">' + item.title + '</a></span>'
-        + '<div class="weibo-num"><span>' + item.num + '</span></div></div>'
-    }
-    html += '</div>'
-    document.getElementById('weibo-container').innerHTML = html
-  }).catch(function (error) {
-    console.log(error);
-  });
-}
+// function getWeibo() {
+//   fetch('').then(data => data.json()).then(data => {  // 这里要写上你的API!!!
+//     let html = '<style>.weibo-new{background:#ff3852}.weibo-hot{background:#ff9406}.weibo-jyzy{background:#ffc000}.weibo-recommend{background:#00b7ee}.weibo-adrecommend{background:#febd22}.weibo-friend{background:#8fc21e}.weibo-boom{background:#bd0000}.weibo-topic{background:#ff6f49}.weibo-topic-ad{background:#4dadff}.weibo-boil{background:#f86400}#weibo-container{overflow-y:auto;-ms-overflow-style:none;scrollbar-width:none}#weibo-container::-webkit-scrollbar{display:none}.weibo-list-item{display:flex;flex-direction:row;justify-content:space-between;flex-wrap:nowrap}.weibo-title{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-right:auto}.weibo-num{float:right}.weibo-hotness{display:inline-block;padding:0 6px;transform:scale(.8) translateX(-3px);color:#fff;border-radius:8px}</style>'
+//     html += '<div class="weibo-list">'
+//     let hotness = {
+//       '爆': 'weibo-boom',
+//       '热': 'weibo-hot',
+//       '沸': 'weibo-boil',
+//       '新': 'weibo-new',
+//       '荐': 'weibo-recommend',
+//       '音': 'weibo-jyzy',
+//       '影': 'weibo-jyzy',
+//       '剧': 'weibo-jyzy',
+//       '综': 'weibo-jyzy'
+//     }
+//     for (let item of data) {
+//       html += '<div class="weibo-list-item"><div class="weibo-hotness ' + hotness[(item.hot || '荐')] + '">' + (item.hot || '荐') + '</div>'
+//         + '<span class="weibo-title"><a title="' + item.title + '"href="' + item.url + '" target="_blank" rel="external nofollow noreferrer" style="color:#a08ed5">' + item.title + '</a></span>'
+//         + '<div class="weibo-num"><span>' + item.num + '</span></div></div>'
+//     }
+//     html += '</div>'
+//     document.getElementById('weibo-container').innerHTML = html
+//   }).catch(function (error) {
+//     console.log(error);
+//   });
+// }
 
 /* 微博热搜 end */
 
@@ -3189,7 +3196,7 @@ if (localStorage.getItem("blogbg") != undefined) {
   setBg(localStorage.getItem("blogbg"));
 } else {
   document.getElementById("defineBg").innerText = `:root{
-    --default-bg: url(/assets/img/bc11.webp);
+    --default-bg: url(/assets/img/bc10.webp);
     --darkmode-bg: url(/assets/img/bc21.webp);
     --mobileday-bg: url(/assets/img/bc10.webp);
     --mobilenight-bg: url(/assets/img/bc21.webp);
